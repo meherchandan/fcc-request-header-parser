@@ -23,6 +23,10 @@ app.get("/api/whoami",function(request, response){
 })
 // http://expressjs.com/en/starter/basic-routing.html
 
+app.get("/",function(request,response){
+  response.sendFile(__dirname + '/views/index.html');
+})
+
 
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
